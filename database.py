@@ -6,7 +6,7 @@ from pymongo import MongoClient
 
 load_dotenv()
 
-uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+uri = os.environ["MONGO_URI"]
 
 client = MongoClient(uri, tlsCAFile=certifi.where(), serverSelectionTimeoutMS=10000)
 
