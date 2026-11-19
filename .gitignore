@@ -15,3 +15,6 @@ __pycache__/
 
 # Generated results
 performance_results/
+
+# backup file
+mongo_backup/
